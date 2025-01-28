@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Detail</title>
+  <style>
+    .blog-detail {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .image-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .blog-detail img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      object-fit: cover;
+      width: 500px;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blog-detail h1 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .blog-detail p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blog-detail">
+    <h1 id="blogTitle" style="text-align: center; font-size: 3rem;"></h1>
+    <div style="width: 100%;" class="image-section">
+      <img id="blogImage" src="" alt="Blog Image">
+    </div>
+    <p id="blogDescription" style=" font-size: 1.2rem;"></p>
+  </div>
+  <script src="blog-detail.js"></script>
+</body>
+
+</html>

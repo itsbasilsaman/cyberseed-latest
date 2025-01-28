@@ -1,0 +1,18 @@
+{
+  "blog": {
+    "title": "The Consulting Playbook: Tactics for Success",
+    "mainImage": "https://cdn.prod.website-files.com/663089c11301d11e93e4aa99/66586cd41616a8f28abe7240_blog-main-img-01.jpg",
+    "summary": {
+      "heading": "The Artistry of Consulting",
+      "content": "Transformative force, akin to a skilled painter crafting a masterpiece on a blank canvas. This blog delves into the intricate brushstrokes of strategic guidance, innovative thinking, and the adaptive prowess that define the landscape of consulting.",
+      "subheading": "Reshaping Business Perspectives",
+      "details": "From market analysis to visionary planning, this section unveils how consultants mold strategies that stand as pillars for organizational transformation.",
+      "list": [
+        "Embark on a journey through the intricate dance of adaptability.",
+        "Learn how consultants navigate the complexities of dynamic markets",
+        "Adjusting their choreography to the rhythm of change and providing business",
+        "Successful case studies that illustrate the profound impact of consulting artistry."
+      ]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberseed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F9FAFB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .form-wrapper {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .form-container {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            color: #4FC65A;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        label {
+            color: #334155;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #4FC65A;
+            box-shadow: 0 0 4px rgba(13, 148, 136, 0.4);
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4FC65A;
+            color: #FFFFFF;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4FC65A;
+        }
+
+        button:active {
+            background-color: #4FC65A;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <!-- Main Blog Content Form -->
+        <div class="form-container">
+            <h2>Main Blog Content</h2>
+            <form id="mainBlogForm">
+                <label for="mainTitle">Title</label>
+                <input type="text" id="mainTitle" name="mainTitle" required>
+
+                <label for="mainImageUrl">Image URL</label>
+                <input type="url" id="mainImageUrl" name="mainImageUrl" required>
+
+                <label for="mainDate">Date</label>
+                <input type="text" id="mainDate" name="mainDate" placeholder="YYYY-MM-DD" required>
+
+                <label for="mainCategory">Category</label>
+                <input type="text" id="mainCategory" name="mainCategory" required>
+
+                <label for="mainDescription">Description</label>
+                <textarea id="mainDescription" name="mainDescription" required></textarea>
+
+                <button type="submit">Submit </button>
+            </form>
+        </div>
+
+        <!-- Blog Collections Head Form -->
+        <div class="form-container">
+            <h2>Blog Collections Head</h2>
+            <form id="collectionsForm">
+                <label for="collectionTitle">Title</label>
+                <input type="text" id="collectionTitle" name="collectionTitle" required>
+
+                <label for="collectionImageUrl">Image URL</label>
+                <input type="url" id="collectionImageUrl" name="collectionImageUrl" required>
+
+                <label for="collectionDate">Date</label>
+                <input type="text" id="collectionDate" name="collectionDate" placeholder="YYYY-MM-DD" required>
+
+                <label for="collectionCategory">Category</label>
+                <input type="text" id="collectionCategory" name="collectionCategory" required>
+
+                <label for="collectionDescription">Description</label>
+                <textarea id="collectionDescription" name="collectionDescription" required></textarea>
+
+                <button type="submit">Submit </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const mainBlogForm = document.getElementById('mainBlogForm');
+        const collectionsForm = document.getElementById('collectionsForm');
+
+        mainBlogForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            console.log('Submitting Main Blog Content');
+            const data = new FormData(mainBlogForm);
+            data.forEach((value, key) => console.log(`${key}: ${value}`));
+        });
+
+        collectionsForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            console.log('Submitting Blog Collections Head');
+            const data = new FormData(collectionsForm);
+            data.forEach((value, key) => console.log(`${key}: ${value}`));
+        });
+    </script>
+</body>
+</html>

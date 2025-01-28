@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f4f5f7;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+        .card-blue {
+            background-color: #4FC65A;
+        }
+        .card-light-blue {
+            background-color: #1a6121;
+        }
+        .card-purple {
+            background-color: #4FC65A;
+        }
+        .card-green {
+            background-color:  #4FC65A;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            background-color: #4caf50;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="adminform.html">Add</a>
+        <a href="#">Remove</a>
+        <a href="#">Edit</a>
+        
+    </div>
+    <div class="main-content">
+        <h1 style="margin-bottom: 30px;">Welcome to the Admin Dashboard</h1>
+        <div class="card-container">
+            <a href="adminform.html" style="text-decoration: none;">
+              <div class="card card-blue">
+                  <h2>Add Content </h2>            
+              </div>
+            </a>
+            <div class="card card-light-blue">
+                <h2>Remove Content</h2>
+                
+            </div>
+            <div class="card card-purple">
+                <h2>Edit Content</h2>
+                
+            </div>
+            <!-- <div class="card card-green">
+                <h2>Net Profit Margin</h2>
+                <p>$179,000</p>
+                <small>Saved 65%</small>
+            </div> -->
+        </div>
+        
+    </div>
+</body>
+</html>

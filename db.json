@@ -1,0 +1,36 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Visual Chronicles: Crafted Art Photography",
+      "imageUrl": "../cdn.prod.website-files.com/663089c11301d11e93e4aa99/66586c511616a8f28abe00ae_blog-thumbnail-img-02.jpg",
+      "postLink": "./blogdetails.html",
+      "date": "June 4, 2024",
+      "category": "Marketing",
+      "categoryLink": "blog-categories/marketing.html",
+      "description": "A deep dive into art photography as a powerful marketing tool."
+    },
+    {
+      "id": 2,
+      "title": "The Art of Consulting: Transforming Business",
+      "imageUrl": "../cdn.prod.website-files.com/663089c11301d11e93e4aa99/665846e943691efc27197a24_blog-thumbnail-img-03.jpg",
+      "postLink": "./blogdetails.html",
+      "date": "June 4, 2024",
+      "category": "Analytics",
+      "categoryLink": "blog-categories/analytics.html",
+      "description": "Consulting strategies for business transformation."
+    },
+    {
+      "id": 3,
+      "title": "Expert Perspectives: Consulting With Growth",
+      "imageUrl": "../cdn.prod.website-files.com/663089c11301d11e93e4aa99/6658470243691efc27198d14_blog-thumbnail-img-04.jpg",
+      "postLink": "./blogdetails.html",
+      "date": "June 4, 2024",
+      "category": "Marketing",
+      "categoryLink": "blog-categories/marketing.html",
+      "description": "Insights from leading experts on consulting for growth."
+    }
+  ]
+ 
+}
+
