@@ -4,7 +4,7 @@ const slug = urlParams.get("slug");
 
 async function fetchBlogDetails() {
   try {
-    const response = await fetch(`https://saleelvt-cyberceed-back-end-5.onrender.com/api/get_blog_by_slug?slug=${slug}`);
+    const response = await fetch(`https://saleelvt-cyberceed-back-end-6.onrender.com/api/get_blog_by_slug?slug=${slug}`);
     console.log("Response received: ", response);
     
     let data; // Declare data in the outer scope
