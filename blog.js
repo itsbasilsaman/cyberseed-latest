@@ -6,7 +6,7 @@ async function populateBlogFeature() {
 
   try {
     const brand= "CYBERSEED"
-    const response = await fetch(`https://saleelvt-cyberceed-back-end-6.onrender.com/api/get_blog?brand=${brand}`);
+    const response = await fetch(`https://saleelvt-cyberceed-back-end-4.onrender.com/api/get_blog?brand=${brand}`);
     const data = await response.json();
 
     // Validate response structure
@@ -56,7 +56,7 @@ async function populateBlogFeature() {
 
   try {
     const brand= "CYBERSEED"
-    const response = await fetch(`https://saleelvt-cyberceed-back-end-5.onrender.com/api/get_blog?brand=${brand}`);
+    const response = await fetch(`https://saleelvt-cyberceed-back-end-4.onrender.com/api/get_blog?brand=${brand}`);
     const data = await response.json();
 
     // Validate response structure

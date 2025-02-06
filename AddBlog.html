@@ -111,6 +111,9 @@
           <label for="title">Title</label>
           <input type="text" id="title" name="title" required />
 
+          <label for="head-title">Head title</label>
+          <input type="text" name="headTitle" id="headTitle" required />
+
           <label for="slug">Slug</label>
           <input type="text" id="slug" name="slug" required />
 
@@ -190,7 +193,7 @@
         console.log("Form data:", formObject);
 
         try {
-          const createBlogAPI = "https://saleelvt-cyberceed-back-end-5.onrender.com/api/create_blog";
+          const createBlogAPI = "https://saleelvt-cyberceed-back-end-4.onrender.com/api/create_blog";
           const response = await fetch(createBlogAPI, {
             method: "POST",
             headers: {
